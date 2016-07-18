@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerBehavior : MonoBehaviour {
     public GameObject self;
     public GameObject head;
+    public GameObject gun;
     private TransformGameObject MoveGO;
     private float mousex, mousey;
     public float mousexSensitivity, mouseySensitivity;
@@ -12,6 +13,7 @@ public class PlayerBehavior : MonoBehaviour {
         MoveGO = self.AddComponent<TransformGameObject>();
         mousex = Input.GetAxisRaw("Mouse X");
         mousey = Input.GetAxisRaw("Mouse Y");
+
         Cursor.lockState = CursorLockMode.Locked;
     }
     void MovePlayer() {

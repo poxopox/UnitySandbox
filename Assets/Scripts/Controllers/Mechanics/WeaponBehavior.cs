@@ -36,7 +36,7 @@ public class WeaponBehavior : MonoBehaviour {
         LaunchProjectile();
     }
 
-    void Update() {
+    void LateUpdate() {
         if (Input.GetButtonDown("Fire1"))
         {
             Fire();
